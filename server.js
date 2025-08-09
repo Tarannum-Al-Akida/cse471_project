@@ -8,8 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection
-const uri = "mongodb+srv://akidatarannum:akida123@cluster0.jxnswfw.mongodb.net/BRACU_Out?retryWrites=true&w=majority&appName=Cluster0";
+
+
 mongoose.connect(uri)
   .then(() => {
     console.log("✅ Connected to MongoDB Atlas");
